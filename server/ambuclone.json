@@ -1,0 +1,645 @@
+{
+  "users": [
+    {
+      "id": 1774607148819,
+      "name": "System Admin",
+      "email": "admin@ambu.com",
+      "phone": "",
+      "password_hash": "$2b$10$f.i0uFV21LugYJEprs/zXuzJkmcyGX4gGkjZMT0lManl.pzAYB6hC",
+      "role": "admin"
+    },
+    {
+      "id": 1774607148908,
+      "name": "John Doe",
+      "email": "user@ambu.com",
+      "phone": "",
+      "password_hash": "$2b$10$tnweKOEO5c/iwIJPwRMieeBEHRFds5g7XMITZTbXK8Hbb/BHMvFJC",
+      "role": "user"
+    },
+    {
+      "id": 1774607390852,
+      "name": "Bilal",
+      "email": "bilal@gmail.com",
+      "phone": "9072028649",
+      "password_hash": "$2b$10$oTXTtJQst.QnwVZjzgbEUuNwCRC2eE1lNJXdeEUCMwborgteMGwS6",
+      "role": "user"
+    },
+    {
+      "id": 1774608326675,
+      "name": "Farook Rasheed",
+      "email": "farookrasheed041@gmail.com",
+      "phone": "09072028649",
+      "password_hash": "$2b$10$unKWYcsWyJbJDXUzd8a12uDZ.i9gyDEG5GroN5T1d9B4UxVNLC5Ja",
+      "role": "user"
+    },
+    {
+      "id": 1774678351962,
+      "name": "Fahad",
+      "email": "fahad@gmail.com",
+      "phone": "9087654567",
+      "password_hash": "$2b$10$eKVv7jPxrBQ5f1EV3OceAed621tF1ZHxAzA58cVV1csR6Dqz4R80u",
+      "role": "driver",
+      "latitude": 11.1078,
+      "longitude": 76.0549,
+      "last_updated": 1774765449290,
+      "status": "available"
+    },
+    {
+      "id": 1774681934987,
+      "name": "Emergency Driver",
+      "email": "driver@ambu.com",
+      "phone": "+91-9876543210",
+      "password_hash": "$2b$10$Jedmck288csMW2Hv0rTLTeuk6UxnAGR0DxO9McHjOpK2myCMlenqm",
+      "role": "driver",
+      "vehicle_number": "AMBU-DL-01",
+      "latitude": 28.6139,
+      "longitude": 77.209,
+      "status": "available",
+      "last_updated": 1774681935081
+    },
+    {
+      "id": 1774766227712,
+      "name": "FAROOK",
+      "email": "farook@gmail.com",
+      "phone": "8089808097",
+      "password_hash": "$2b$10$H4.dlTvangCNKsWSyrhlqu89IejVIMZFnFZFfolZ.xJ6CSaJFDUya",
+      "role": "driver",
+      "vehicle_number": "AMBU-4396",
+      "latitude": 11.1078,
+      "longitude": 76.0549,
+      "status": "busy",
+      "last_updated": 1774766330090
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1774607894355,
+      "userEmail": "bilal@gmail.com",
+      "name": "bilal",
+      "phone": "9072028649",
+      "pickup": "mythri road, Changuvetty, Tirurangadi, Malappuram, Kerala, 676501, India",
+      "destination": "Almas Hospital, to almass hospital, Changuvetty, Atteeri, Ernad, Malappuram, Kerala, 676501, India",
+      "coordinates": {
+        "lat": 10.999863003270121,
+        "lng": 75.98911990321245
+      },
+      "hospital_coords": {
+        "lat": 10.9998964,
+        "lng": 75.9908152
+      },
+      "ambulance": "AMBU-PRO-210",
+      "driverName": "Vikram Singh",
+      "driverPhone": "+91-9876543210",
+      "type": "Oxygen Ambulance",
+      "status": "Completed",
+      "time": "2026-03-30T16:08",
+      "date": "27/3/2026, 4:08:14 pm"
+    },
+    {
+      "id": 1774608431591,
+      "userEmail": "farookrasheed041@gmail.com",
+      "name": "Farook Rasheed",
+      "phone": "9072028649",
+      "pickup": "mythri road, Changuvetty, Tirurangadi, Malappuram, Kerala, 676501, India",
+      "destination": "Almas Hospital, to almass hospital, Changuvetty, Atteeri, Ernad, Malappuram, Kerala, 676501, India",
+      "coordinates": {
+        "lat": 10.999864835866,
+        "lng": 75.98906249859326
+      },
+      "hospital_coords": {
+        "lat": 10.9998964,
+        "lng": 75.9908152
+      },
+      "ambulance": "AMBU-PRO-962",
+      "driverName": "Vikram Singh",
+      "driverPhone": "+91-9876543210",
+      "type": "Emergency",
+      "status": "Dispatched",
+      "time": "2026-04-04T16:17",
+      "date": "27/3/2026, 4:17:11 pm"
+    },
+    {
+      "id": 1774675848406,
+      "userEmail": "farookrasheed041@gmail.com",
+      "name": "Farook Rasheed",
+      "phone": "09072028649",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "coordinates": {
+        "lat": 10.999866015001261,
+        "lng": 75.98912233557388
+      },
+      "hospital_coords": {
+        "lat": 10.9990036,
+        "lng": 75.9911013
+      },
+      "ambulance": "AMBU-XP-734",
+      "driverName": "Sanjay Dutt (SOS Responder)",
+      "driverPhone": "+91-9988776655",
+      "type": "EMERGENCY_SOS",
+      "status": "Critical_Dispatch",
+      "time": "",
+      "date": "28/3/2026, 11:00:48 am"
+    },
+    {
+      "id": 1774677505809,
+      "name": "REAL-TIME SOS ALERT",
+      "phone": "AUTO-GPS-V8",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "coordinates": {
+        "lat": 10.999859694378282,
+        "lng": 75.98909645546712
+      },
+      "hospital_coords": {
+        "lat": 10.9990036,
+        "lng": 75.9911013
+      },
+      "ambulance": "AMBU-XP-789",
+      "driverName": "Sanjay Dutt (SOS Responder)",
+      "driverPhone": "+91-9988776655",
+      "type": "EMERGENCY_SOS",
+      "status": "Completed",
+      "time": "",
+      "date": "28/3/2026, 11:28:25 am"
+    },
+    {
+      "id": 1774682071487,
+      "phone": "9072028649",
+      "name": "safas",
+      "user_phone": "9072028649",
+      "user_latitude": 10.999857935922376,
+      "user_longitude": 75.9890652263386,
+      "user_name": "safas",
+      "type": "Non-Emergency (BLS)",
+      "pickup": "mythri road, Changuvetty, Tirurangadi, Malappuram, Kerala, 676501, India",
+      "destination": "Almas Hospital, to almass hospital, Changuvetty, Atteeri, Ernad, Malappuram, Kerala, 676501, India",
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774682071487
+    },
+    {
+      "id": 1774682234301,
+      "phone": "SOS-30595",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "SOS-30595",
+      "user_latitude": 10.999857496244582,
+      "user_longitude": 75.9890633301523,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774682234301
+    },
+    {
+      "id": 1774682317361,
+      "phone": "SOS-28392",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "SOS-28392",
+      "user_latitude": 10.9998637075247,
+      "user_longitude": 75.98906652061632,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774682317361
+    },
+    {
+      "id": 1774682329452,
+      "phone": "SOS-55346",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "SOS-55346",
+      "user_latitude": 10.9998637075247,
+      "user_longitude": 75.98906652061632,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774682329452
+    },
+    {
+      "id": 1774682430719,
+      "phone": "SOS-28565",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "SOS-28565",
+      "user_latitude": 10.999868174610674,
+      "user_longitude": 75.98906385636448,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "driver_id": 1774678351962,
+      "status": "Dispatched",
+      "timestamp": 1774682430719
+    },
+    {
+      "id": 1774686618676,
+      "phone": "SOS-16947",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "SOS-16947",
+      "user_latitude": 10.999865608554819,
+      "user_longitude": 75.98906682176415,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "driver_id": 1774678351962,
+      "status": "Dispatched",
+      "timestamp": 1774686618676
+    },
+    {
+      "id": 1774686934957,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 10.999862849108839,
+      "user_longitude": 75.98906850223767,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774686934957
+    },
+    {
+      "id": 1774695731131,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 10.999866556929847,
+      "user_longitude": 75.98906936205442,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [10.9999, 75.9891]",
+      "destination": "Almas Hospital",
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774695731131
+    },
+    {
+      "id": 1774763599425,
+      "phone": "9898989898",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9898989898",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774763599425
+    },
+    {
+      "id": 1774763953728,
+      "phone": "9072029876",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072029876",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774763953729
+    },
+    {
+      "id": 1774764304770,
+      "phone": "0000000000",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "0000000000",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774764304770
+    },
+    {
+      "id": 1774764399977,
+      "phone": "0000000000",
+      "name": "ll",
+      "user_phone": "0000000000",
+      "user_latitude": 28.615026654564975,
+      "user_longitude": 77.21603393554689,
+      "user_name": "ll",
+      "type": "ICU-on-Wheels",
+      "pickup": "Chanakya Puri Tehsil, New Delhi, Delhi, 110004, India",
+      "destination": "Shahjahan Road, Chanakya Puri Tehsil, New Delhi, Delhi, 020626, India",
+      "hospital_coords": {
+        "lat": 28.61050573095748,
+        "lng": 77.23045349121095
+      },
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774764399977
+    },
+    {
+      "id": 1774764699220,
+      "phone": "9065456735",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9065456735",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": 1774678351962,
+      "status": "Transporting",
+      "timestamp": 1774764699220
+    },
+    {
+      "id": 1774765032603,
+      "phone": "8765432456",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "8765432456",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "City Central Trauma Center",
+      "hospital_coords": {
+        "lat": 11.117799999999999,
+        "lng": 76.06490000000001
+      },
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774765032603
+    },
+    {
+      "id": 1774765406592,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": 1774678351962,
+      "status": "Completed",
+      "timestamp": 1774765406593
+    },
+    {
+      "id": 1774765492013,
+      "phone": "907654567876",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "907654567876",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765492013
+    },
+    {
+      "id": 1774765511777,
+      "phone": "9072567876",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072567876",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765511777
+    },
+    {
+      "id": 1774765528052,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765528052
+    },
+    {
+      "id": 1774765701914,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765701914
+    },
+    {
+      "id": 1774765715286,
+      "phone": "079789686786",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "079789686786",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765715286
+    },
+    {
+      "id": 1774765735755,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765735755
+    },
+    {
+      "id": 1774765787246,
+      "phone": "8089808096",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "8089808096",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765787246
+    },
+    {
+      "id": 1774765811163,
+      "phone": "9887679874",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9887679874",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765811163
+    },
+    {
+      "id": 1774765829524,
+      "phone": "9645453974",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9645453974",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765829524
+    },
+    {
+      "id": 1774765844826,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765844826
+    },
+    {
+      "id": 1774765975642,
+      "phone": "9072028649",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9072028649",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": null,
+      "status": "Expired",
+      "timestamp": 1774765975642
+    },
+    {
+      "id": 1774766308397,
+      "phone": "9876543212",
+      "name": "REAL-TIME SOS ALERT",
+      "user_phone": "9876543212",
+      "user_latitude": 11.1078,
+      "user_longitude": 76.0549,
+      "user_name": "REAL-TIME SOS ALERT",
+      "type": "EMERGENCY_SOS",
+      "pickup": "GPS: [11.1078, 76.0549]",
+      "destination": "Primary Health Centre, Pookottur",
+      "hospital_coords": {
+        "lat": 11.1073842,
+        "lng": 76.0547949
+      },
+      "driver_id": 1774766227712,
+      "status": "Completed",
+      "timestamp": 1774766308397
+    }
+  ],
+  "emergencies": []
+}

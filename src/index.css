@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #fef2f2;
+  --color-primary-100: #fee2e2;
+  --color-primary-500: #ef4444; /* Ambulance Red */
+  --color-primary-600: #dc2626;
+  --color-primary-700: #b91c1c;
+  --color-secondary-50: #eff6ff;
+  --color-secondary-500: #3b82f6; /* Medical Blue */
+  --color-secondary-600: #2563eb;
+  --color-secondary-900: #1e3a8a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+  overflow-x: hidden;
+}
+
+/* Custom Webkit scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #ef4444;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
+
+/* Glassmorphism helpers */
+.glass {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Immersive Ambulance Strobe Light Animations */
+@keyframes ambulance-strobe-red {
+  0%, 100% { opacity: 0; }
+  2% { opacity: 0.8; box-shadow: 0 0 100px 80px rgba(255, 0, 0, 0.8); }
+  6% { opacity: 0; }
+  10% { opacity: 0.8; box-shadow: 0 0 100px 80px rgba(255, 0, 0, 0.8); }
+  14% { opacity: 0; }
+  18% { opacity: 1; box-shadow: 0 0 150px 100px rgba(255, 0, 0, 1); }
+  24% { opacity: 0; }
+}
+
+@keyframes ambulance-strobe-blue {
+  0%, 50%, 100% { opacity: 0; }
+  52% { opacity: 0.8; box-shadow: 0 0 100px 80px rgba(0, 100, 255, 0.8); }
+  56% { opacity: 0; }
+  60% { opacity: 0.8; box-shadow: 0 0 100px 80px rgba(0, 100, 255, 0.8); }
+  64% { opacity: 0; }
+  68% { opacity: 1; box-shadow: 0 0 150px 100px rgba(0, 100, 255, 1); }
+  74% { opacity: 0; }
+}
+
+@keyframes ambient-flash-red {
+  0%, 100% { opacity: 0; }
+  10% { opacity: 0.4; }
+  25% { opacity: 0; }
+}
+
+@keyframes ambient-flash-blue {
+  0%, 50%, 100% { opacity: 0; }
+  60% { opacity: 0.4; }
+  75% { opacity: 0; }
+}
+
+.strobe-emitter-red { animation: ambulance-strobe-red 1.3s infinite ease-out; }
+.strobe-emitter-blue { animation: ambulance-strobe-blue 1.3s infinite ease-out; }
+.ambient-glow-red { animation: ambient-flash-red 1.3s infinite ease-out; }
+.ambient-glow-blue { animation: ambient-flash-blue 1.3s infinite ease-out; }
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Hide scrollbars for time picker columns */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
